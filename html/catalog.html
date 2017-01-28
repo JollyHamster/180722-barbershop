@@ -9,23 +9,23 @@
   <header class="main-header">
 	  <div class="container"> <!--оцентровка для блока с лого и навигацией-->
 	    <div class="logo">
-		    <img src="barbershop-logo.png" width="" height="" alt="Барбершоп <<Бородинский>>">
+		    <img src="barbershop-logo.png" alt="Барбершоп <<Бородинский>>" width="" height="">
 	    </div>
 	    <nav class="main-nav">
-		    <ul>
-		      <li>
+		    <ul class="main-nav-list">
+		      <li class="main-nav-link">
 			      <a href="#">Информация</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link">
 			      <a href="#">Новости</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link">
 			      <a href="#">Прайс-лист</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link">
 			      <a href="#">Магазин</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link">
 			      <a href="#">Контакты</a>
 			    </li>
 		    </ul>
@@ -35,11 +35,12 @@
 		  </div>
 	  </div>
 	</header>
-	<main class="container"> <!--оцентровка основного содержания-->
+
+  <main class="container"> <!--оцентровка основного содержания-->
 	<!--блок с заголовком каталога и второстепенной навигацией-->
 	  <section class="catalog-title">
 	    <h1>Средства для ухода</h1>
-		  <nav class="sub-nav">
+		  <nav class="breadcrumbs">
 		    <ul>
 		      <li>
 			    <a href="#">Главная</a>
@@ -47,152 +48,160 @@
 			    <li>
 			      <a href="#">Магазин</a>
 			    </li>
-			    <li>
-			      <a href="#">Средства для ухода</a>
+			    <li class="active">
+			      <a>Средства для ухода</a>
 			    </li>
 		    </ul>
 		  </nav>
 	  </section>
+
 	  <!--сайдбар с производителями и группой товаров-->
-	  <aside class="sidebar">
-		  <form class="sidebar-form" action="https://echo.htmlacademy.ru" method="get">
-	      <section class="sidebar-producers">
-		      <h2 class="sidebar-title">Производители</h2>
-		      <div class="sidebar-producers-list">
+	  <div class="sidebar">
+		  <form class="form" action="https://echo.htmlacademy.ru" method="post">
+	      <fieldset class="producers group">
+		      <legend>Производители</legend>
+		      <div class="producers-list">
 		        <input type="checkbox" name="baxter" id="check-baxter" checked>
-			        <label for="check-baxter">BAXTER OF CALIFORNIA</label>
+			      <label for="check-baxter">BAXTER OF CALIFORNIA</label>
 			      <input type="checkbox" name="natty" id="check-natty">
-			        <label for="check-natty">MR NATTY</label>
+			      <label for="check-natty">MR NATTY</label>
 			      <input type="checkbox" name="suavecito" id="check-suavecito" checked>
-			        <label for="check-suavecito">SUAVECITO</label>
+			      <label for="check-suavecito">SUAVECITO</label>
 			      <input type="checkbox" name="malingoetz" id="check-malingoetz">
-			        <label for="check-malingoetz">MALIN+GOETZ</label>
+			      <label for="check-malingoetz">MALIN+GOETZ</label>
 			      <input type="checkbox" name="murrays" id="check-murrays">
-			        <label for="check-murrays">MURRAY'S</label>
+			      <label for="check-murrays">MURRAY'S</label>
 			      <input type="checkbox" name="americancrew" id="check-americancrew" checked>
-			        <label for="check-americancrew">AMERICAN CREW</label>
+			      <label for="check-americancrew">AMERICAN CREW</label>
 		      </div>
-		    </section>
-		    <section class="sidebar-group">
-		      <h2 class="sidebar-title">Группа товаров</h2>
-		      <div class="sidebar-group-list">
-		        <input type="checkbox" name="razor" id="check-razor">
-			        <label for="check-razor">Бритвенные принадлежности</label>
-			      <input type="checkbox" name="daycare" id="check-daycare" checked>
+		    </fieldset>
+
+		    <fieldset class="products group">
+		      <legend>Группа товаров</legend>
+		      <div class="products-list">
+            <li>
+              <input type="radio" name="products" value="Бритвенные принадлежности" id="check-razor">
+			        <label for="check-razor">Бритвенные<br> принадлежности</label>
+            </li>
+            <li>
+			        <input type="radio" name="products" value="Средства для ухода" id="check-daycare" checked>
 			        <label for="check-daycare">Средства для ухода</label>
-			      <input type="checkbox" name="accessories" id="check-accessories">
+            </li>
+            <li>
+			        <input type="radio" name="products" value="Аксессуары" id="check-accessories">
 			        <label for="check-accessories">Аксессуары</label>
+            </li>
 		      </div>
 		      <div class="sidebar-button">
 			      <button class="btn" type="sumbit">Показать</button>
 		      </div>
-		    </section>
+		    </fieldset>
 		  </form>
-	  </aside>
+	  </div>
+
 	  <!--каталог с картинками и описанием товаров-->
-	  <section class="catalog-content">
-		  <div class="catalog-product">
-		    <div class="catalog-product-info">
-		      <a href="#">
-			    <img src="baxter.jpg">
-			    <h3><span class="catalog-product-type">Набор для путешествий</span>"BAXTER OF CALIFORNIA"</h3>
-			    </a>
+	  <section class="product-catalog">
+		  <article class="product">
+		    <div class="product-info">
+          <h2><span class="product-type">Набор для путешествий</span>"BAXTER OF CALIFORNIA"
+            <a href="#">
+			        <img src="baxter.jpg">
+            </a>
+			    </h2>
 		    </div>
-		    <div class="catalog-product-order">
-		      <span class="catalog-product-price">2 900 РУБ.</span>
-			    <form class="catalog-product-submit" action="https://echo.htmlacademy.ru" method="post">
-			      <button class="btn" type="submit">Купить</button>
-			    </form>
+		    <div class="product-order">
+		      <span class="product-price">2 900 РУБ.</span>
+			    <a class="btn" href="#">Купить</a>
 		    </div>
-		  </div>
-		  <div class="catalog-product">
-		    <div class="catalog-product-info">
-		      <a href="#">
-			    <img src="baxter-1.jpg">
-			    <h3><span class="catalog-product-type">Увлажняющий кондиционер</span>"BAXTER OF CALIFORNIA"</h3>
-		  	  </a>
+		  </article>
+
+		  <article class="product">
+		    <div class="product-info">
+          <h3><span class="catalog-product-type">Увлажняющий кондиционер</span>"BAXTER OF CALIFORNIA"
+          <a href="#">
+			      <img src="baxter-1.jpg">
+          </a>
+			    </h3>
 		    </div>
-		    <div class="catalog-product-order">
-		      <span class="catalog-product-price">750 РУБ.</span>
-			    <form class="catalog-product-submit" action="https://echo.htmlacademy.ru" method="post">
-			      <button class="btn" type="submit">Купить</button>
-			    </form>
+		    <div class="product-order">
+		      <span class="product-price">750 РУБ.</span>
+			    <a class="btn" href="#">Купить</a>
 		    </div>
-		  </div>
-		  <div class="catalog-product">
-		    <div class="catalog-product-info">
-		      <a href="#">
-			    <img src="suavecito.jpg">
-			    <h3><span class="catalog-product-type">Гель для волос</span>"SUAVECITO"</h3>
-			    </a>
+		  </article>
+
+		  <article class="product">
+		    <div class="product-info">
+          <h3><span class="product-type">Гель для волос</span>"SUAVECITO"
+          <a href="#">
+			      <img src="suavecito.jpg">
+          </a>
+			    </h3>
 		    </div>
-		    <div class="catalog-product-order">
-		      <span class="catalog-product-price">290 РУБ.</span>
-			    <form class="catalog-product-submit" action="https://echo.htmlacademy.ru" method="post">
-			      <button class="btn" type="submit">Купить</button>
-			    </form>
+		    <div class="product-order">
+		      <span class="product-price">290 РУБ.</span>
+			    <a class="btn" href="#">Купить</a>
 		    </div>
-		  </div>
-		  <div class="catalog-product">
-		    <div class="catalog-product-info">
-		      <a href="#">
-			    <img src="americancrew.jpg">
-			    <h3><span class="catalog-product-type">Глина для укладки волос</span>"AMERICAN CREW"</h3>
-			    </a>
+		  </article>
+
+		  <article class="product">
+		    <div class="product-info">
+          <h3><span class="catalog-product-type">Глина для укладки волос</span>"AMERICAN CREW"
+          <a href="#">
+			      <img src="americancrew.jpg">
+          </a>
+			    </h3>
 		    </div>
-		    <div class="catalog-product-order">
-		      <span class="catalog-product-price">500 РУБ.</span>
-			    <form class="catalog-product-submit" action="https://echo.htmlacademy.ru" method="post">
-			      <button class="btn" type="submit">Купить</button>
-			    </form>
+		    <div class="product-order">
+		      <span class="product-price">500 РУБ.</span>
+			    <a class="btn" href="#">Купить</a>
 		    </div>
-		  </div>
-		  <div class="catalog-product">
-		    <div class="catalog-product-info">
-		      <a href="#">
-			    <img src="americancrew-1.jpg">
-			    <h3><span class="catalog-product-type">Гель для волос</span>"AMERICAN CREW"</h3>
-			    </a>
+		  </article>
+
+		  <article class="product">
+		    <div class="product-info">
+          <h3><span class="product-type">Гель для волос</span>"AMERICAN CREW"
+          <a href="#">
+			      <img src="americancrew-1.jpg">
+          </a>
+			    </h3>
 		    </div>
-		    <div class="catalog-product-order">
-		      <span class="catalog-product-price">300 РУБ.</span>
-			    <form class="catalog-product-submit" action="https://echo.htmlacademy.ru" method="post">
-			      <button class="btn" type="submit">Купить</button>
-			    </form>
+		    <div class="product-order">
+		      <span class="product-price">300 РУБ.</span>
+			    <a class="btn" href="#">Купить</a>
 		    </div>
-		  </div>
-		  <div class="catalog-product">
-		    <div class="catalog-product-info">
-		      <a href="#">
-			    <img src="baxter-2.jpg">
-			    <h3><span class="catalog-product-type">Набор для бритья</span>"BAXTER OF CALIFORNIA"</h3>
-			    </a>
+		  </article>
+
+		  <article class="product">
+		    <div class="product-info">
+          <h3><span class="product-type">Набор для бритья</span>"BAXTER OF CALIFORNIA"
+          <a href="#">
+			      <img src="baxter-2.jpg">
+          </a>
+			    </h3>
 		    </div>
-		    <div class="catalog-product-order">
-		      <span class="catalog-product-price">3 900 РУБ.</span>
-			    <form class="catalog-product-submit" action="https://echo.htmlacademy.ru" method="post">
-			      <button class="btn" type="submit">Купить</button>
-			    </form>
+		    <div class="product-order">
+		      <span class="product-price">3 900 РУБ.</span>
+			    <a class="btn" href="#">Купить</a>
 		    </div>
-		  </div>
-		  <div class="catalog-page">
-		    <ul class="catalog-page-switcher">
-		      <li>
-			      <a class="btn-switch" href="#">1</a>
-			    </li>
-			    <li>
-			      <a class="btn-swith" href="#">2</a>
-			    </li>
-			    <li>
-			      <a class="btn-swith" href="#">3</a>
-			    </li>
-			    <li>
-			      <a class="btn-swith" href="#">4</a>
-			    </li>
-		    </ul>
-		  </div>
+		  </article>
+
+      <ul class="pagination">
+        <li class="pagination-link">
+          <a href="#">1</a>
+        </li>
+        <li class="pagination-link">
+          <a class="active" href="#">2</a>
+        </li>
+        <li class="pagination-link">
+          <a href="#">3</a>
+        </li>
+        <li class="pagination-link">
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
 	  </section>
 	</main>
+
   <footer class="main-footer">
     <div class="container"> <!--оцентровка-->
       <section class="footer-contacts">
@@ -201,12 +210,14 @@
         <a href="#">Как нас найти?</a><br>
         Телефон: +7 (812) 666-02-66
       </section>
+
       <section class="footer-social">
         <p>Давайте дружить!</p>
         <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
         <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
         <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
       </section>
+      
       <section class="footer-copyright">
         <p>Разработано:</p>
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>

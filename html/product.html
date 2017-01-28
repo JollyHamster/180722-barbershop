@@ -12,20 +12,20 @@
 		    <img src="barbershop-logo.png" width="" height="" alt="Барбершоп <<Бородинский>>">
 	    </div>
 	    <nav class="main-nav">
-		    <ul>
-		      <li>
+        <ul class="main-nav-list">
+		      <li class="main-nav-link">
 			      <a href="#">Информация</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link">
 			      <a href="#">Новости</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link">
 			      <a href="#">Прайс-лист</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link-active">
 			      <a href="#">Магазин</a>
 			    </li>
-		      <li>
+		      <li class="main-nav-link">
 			      <a href="#">Контакты</a>
 			    </li>
 		    </ul>
@@ -35,11 +35,12 @@
 		  </div>
 	  </div>
 	</header>
+
   <main class="container"><!--оцентровка основного содержания-->
 	<!--блок с названием товара и второстепенной навигацией-->
     <div class="product-title">
       <h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
-      <nav class="sub-nav">
+      <nav class="breadcrumbs">
         <ul>
           <li>
             <a href="#">Главная</a>
@@ -48,20 +49,30 @@
             <a href="#">Магазин</a>
           </li>
           <li>
-            <a href="#">Средства для ухода</a>
+            <a href="catalog.html">Средства для ухода</a>
           </li>
-          <li>
-            <a href="#">Набор для путешествий "BAXTER OF CALIFORNIA"</a>
+          <li class="active">
+            <a>Набор для путешествий "BAXTER OF CALIFORNIA"</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="product-image">
-      <img src="image1.jpg">
-      <img src="image2.jpg">
-      <img src="image3.jpg">
-      <img src="image4.jpg">
+
+    <div class="product-images">
+      <div class="product-large-image">
+        <img src="image1.jpg" alt="Travel kit" height="#" width="#">
+      </div>
+      <div class="product-small-image">
+        <img src="image2.jpg" alt="Travel kit" height="#" width="#">
+      </div>
+      <div class="product-small-image">
+        <img src="image3.jpg" alt="Travel kit" height="#" width="#">
+      </div>
+      <div class="product-small-image">
+        <img src="image4.jpg" alt="Travel kit" height="#" width="#">
+      </div>
     </div>
+
     <div class="product-description">
       <p>Есть в наличии</p>
       <p>Артикул:DEXTER-AE</p>
@@ -74,11 +85,10 @@
     </div>
     <div class="product-order">
       <span class="product-price">2 900 РУБ.</span>
-      <form class="product-submit" action="https://echo.htmlacademy.ru" method="post">
-        <button class="btn" type="submit">Купить</button>
-      </form>
+      <a class="btn" href="type">Купить</button>
     </div>
-    <div class="product-features">
+
+    <div class="product-info">
       <b>В набор входят:</b>
         <ul>
           <li>Средство для умывания (50 мл)</li>
@@ -89,6 +99,7 @@
         </ul>
     </div>
   </main>
+
   <footer class="main-footer">
     <div class="container"> <!--оцентровка-->
       <section class="footer-contacts">
@@ -97,12 +108,14 @@
         <a href="#">Как нас найти?</a><br>
         Телефон: +7 (812) 666-02-66
       </section>
+
       <section class="footer-social">
         <p>Давайте дружить!</p>
         <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
         <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
         <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
       </section>
+      
       <section class="footer-copyright">
         <p>Разработано:</p>
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
