@@ -9,24 +9,24 @@
   <header class="main-header">
 	  <div class="container"> <!--оцентровка для блока с лого и навигацией-->
 	    <div class="logo">
-		    <img src="barbershop-logo.png" alt="Барбершоп <<Бородинский>>" width="" height="">
+		    <img src="#" alt="Барбершоп <<Бородинский>>" width="" height="">
 	    </div>
 	    <nav class="main-nav">
 		    <ul class="main-nav-list">
-		      <li class="main-nav-link">
-			      <a href="#">Информация</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Информация</a>
 			    </li>
-		      <li class="main-nav-link">
-			      <a href="#">Новости</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Новости</a>
 			    </li>
-		      <li class="main-nav-link">
-			      <a href="#">Прайс-лист</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Прайс-лист</a>
 			    </li>
-		      <li class="main-nav-link">
-			      <a href="#">Магазин</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Магазин</a>
 			    </li>
-		      <li class="main-nav-link">
-			      <a href="#">Контакты</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Контакты</a>
 			    </li>
 		    </ul>
 	    </nav>
@@ -37,62 +37,73 @@
 	</header>
 
   <main class="container"> <!--оцентровка основного содержания-->
-	<!--блок с заголовком каталога и второстепенной навигацией-->
-	  <section class="catalog-title">
-	    <h1>Средства для ухода</h1>
-		  <nav class="breadcrumbs">
-		    <ul>
-		      <li>
-			    <a href="#">Главная</a>
+	  <div class="catalog">
+	    <h1 class="catalog-title">Средства для ухода</h1>
+		  <nav class="sub-nav">
+		    <ul class="breadcrumbs">
+		      <li class="breadcrumbs-item">
+			    <a class="breadcrums-link" href="#">Главная</a>
 			    </li>
-			    <li>
-			      <a href="#">Магазин</a>
+			    <li class="breadcrumbs-item">
+			      <a class="breadcrums-link" href="#">Магазин</a>
 			    </li>
-			    <li class="active">
-			      <a>Средства для ухода</a>
+			    <li class="breadcrumbs-item-active">
+			      <a class="breadcrums-link">Средства для ухода</a>
 			    </li>
 		    </ul>
 		  </nav>
-	  </section>
+	  </div>
 
 	  <!--сайдбар с производителями и группой товаров-->
-	  <div class="sidebar">
-		  <form class="form" action="https://echo.htmlacademy.ru" method="post">
-	      <fieldset class="producers group">
-		      <legend>Производители</legend>
-		      <div class="producers-list">
-		        <input type="checkbox" name="baxter" id="check-baxter" checked>
-			      <label for="check-baxter">BAXTER OF CALIFORNIA</label>
-			      <input type="checkbox" name="natty" id="check-natty">
-			      <label for="check-natty">MR NATTY</label>
-			      <input type="checkbox" name="suavecito" id="check-suavecito" checked>
-			      <label for="check-suavecito">SUAVECITO</label>
-			      <input type="checkbox" name="malingoetz" id="check-malingoetz">
-			      <label for="check-malingoetz">MALIN+GOETZ</label>
-			      <input type="checkbox" name="murrays" id="check-murrays">
-			      <label for="check-murrays">MURRAY'S</label>
-			      <input type="checkbox" name="americancrew" id="check-americancrew" checked>
-			      <label for="check-americancrew">AMERICAN CREW</label>
+	  <div class="form">
+		  <form action="#" method="post">
+	      <fieldset class="field-checkbox-group">
+		      <legend class="field-checkbox-title">Производители</legend>
+		      <div class="field-checkbox-wrap">
+            <label class="field-checkbox-item">
+              <input class="field-checkbox-input" type="checkbox" checked>
+              <span class="field-checkbox-text">Baxter of California</span>
+            </label>
+            <label class="field-checkbox-item">
+              <input class="field-checkbox-input" type="checkbox">
+              <span class="field-checkbox-text">Mr Natty</span>
+            </label>
+            <label class="field-checkbox-item">
+              <input class="field-checkbox-input" type="checkbox" checked>
+              <span class="field-checkbox-text">Suavecito</span>
+            </label>
+            <label class="field-checkbox-item">
+              <input class="field-checkbox-input" type="checkbox">
+              <span class="field-checkbox-text">Malin+Goetz</span>
+            </label>
+            <label class="field-checkbox-item">
+              <input class="field-checkbox-input" type="checkbox">
+              <span class="field-checkbox-text">Murray's</span>
+            </label>
+            <label class="field-checkbox-item">
+              <input class="field-checkbox-input" type="checkbox" checked>
+              <span class="field-checkbox-text">American Crew</span>
+            </label>
 		      </div>
 		    </fieldset>
 
-		    <fieldset class="products group">
-		      <legend>Группа товаров</legend>
-		      <div class="products-list">
-            <li>
-              <input type="radio" name="products" value="Бритвенные принадлежности" id="check-razor">
-			        <label for="check-razor">Бритвенные<br> принадлежности</label>
-            </li>
-            <li>
-			        <input type="radio" name="products" value="Средства для ухода" id="check-daycare" checked>
-			        <label for="check-daycare">Средства для ухода</label>
-            </li>
-            <li>
-			        <input type="radio" name="products" value="Аксессуары" id="check-accessories">
-			        <label for="check-accessories">Аксессуары</label>
-            </li>
+		    <fieldset class="field-radio-group">
+		      <legend class="field-radio-title">Группа товаров</legend>
+		      <div class="field-radio-wrap">
+            <label class="field-radio-item">
+              <input class="field-radio-input" type="radio" value="Бритвенные принадлежности">
+			        <span class="field-radio-text">Бритвенные<br> принадлежности</span>
+            </label>
+            <label class="field-radio-item">
+			        <input class="field-radio-input" type="radio" value="Средства для ухода" checked>
+			        <span class="field-radio-text">Средства для ухода</span>
+            </label>
+            <label class="field-radio-item">
+			        <input class="field-radio-input" type="radio" value="Аксессуары">
+			        <span class="field-radio-text">Аксессуары</span>
+            </label>
 		      </div>
-		      <div class="sidebar-button">
+		      <div class="field-action">
 			      <button class="btn" type="sumbit">Показать</button>
 		      </div>
 		    </fieldset>
@@ -100,103 +111,109 @@
 	  </div>
 
 	  <!--каталог с картинками и описанием товаров-->
-	  <section class="product-catalog">
+	  <section class="products">
 		  <article class="product">
+        <a class="product-img" href="#">
+          <img src="#">
+        </a>
 		    <div class="product-info">
-          <h2><span class="product-type">Набор для путешествий</span>"BAXTER OF CALIFORNIA"
-            <a href="#">
-			        <img src="baxter.jpg">
-            </a>
-			    </h2>
+          <h2 class="product-title">
+            <span class="product-type">Набор для путешествий</span>"BAXTER OF CALIFORNIA"
+          </h2>
 		    </div>
 		    <div class="product-order">
 		      <span class="product-price">2 900 РУБ.</span>
-			    <a class="btn" href="#">Купить</a>
+			    <a class="btn product-btn" href="#">Купить</a>
 		    </div>
 		  </article>
 
 		  <article class="product">
-		    <div class="product-info">
-          <h3><span class="catalog-product-type">Увлажняющий кондиционер</span>"BAXTER OF CALIFORNIA"
-          <a href="#">
-			      <img src="baxter-1.jpg">
-          </a>
-			    </h3>
+        <a class="product-img" href="#">
+          <img src="#">
+        </a>
+        <div class="product-info">
+          <h2 class="product-title">
+            <span class="product-type">Увлажняющий кондиционер</span>"BAXTER OF CALIFORNIA"
+          </h2>
 		    </div>
 		    <div class="product-order">
 		      <span class="product-price">750 РУБ.</span>
-			    <a class="btn" href="#">Купить</a>
+			    <a class="btn product-btn" href="#">Купить</a>
 		    </div>
 		  </article>
 
 		  <article class="product">
-		    <div class="product-info">
-          <h3><span class="product-type">Гель для волос</span>"SUAVECITO"
-          <a href="#">
-			      <img src="suavecito.jpg">
-          </a>
-			    </h3>
+        <a class="product-img" href="#">
+          <img src="#">
+        </a>
+        <div class="product-info">
+          <h2 class="product-title">
+            <span class="product-type">Гель для волос</span>"SUAVECITO"
+          </h2>
 		    </div>
 		    <div class="product-order">
 		      <span class="product-price">290 РУБ.</span>
-			    <a class="btn" href="#">Купить</a>
+			    <a class="btn product-btn" href="#">Купить</a>
 		    </div>
 		  </article>
 
 		  <article class="product">
-		    <div class="product-info">
-          <h3><span class="catalog-product-type">Глина для укладки волос</span>"AMERICAN CREW"
-          <a href="#">
-			      <img src="americancrew.jpg">
-          </a>
-			    </h3>
+        <a class="product-img" href="#">
+          <img src="#">
+        </a>
+        <div class="product-info">
+          <h2 class="product-title">
+            <span class="catalog-product-type">Глина для укладки волос</span>"AMERICAN CREW"
+			    </h2>
 		    </div>
 		    <div class="product-order">
 		      <span class="product-price">500 РУБ.</span>
-			    <a class="btn" href="#">Купить</a>
+			    <a class="btn product-btn" href="#">Купить</a>
 		    </div>
 		  </article>
 
 		  <article class="product">
-		    <div class="product-info">
-          <h3><span class="product-type">Гель для волос</span>"AMERICAN CREW"
-          <a href="#">
-			      <img src="americancrew-1.jpg">
-          </a>
-			    </h3>
+        <a class="product-img" href="#">
+          <img src="#">
+        </a>
+        <div class="product-info">
+          <h2 class="product-title">
+            <span class="product-type">Гель для волос</span>"AMERICAN CREW"
+			    </h2>
 		    </div>
 		    <div class="product-order">
 		      <span class="product-price">300 РУБ.</span>
-			    <a class="btn" href="#">Купить</a>
+			    <a class="btn product-btn" href="#">Купить</a>
 		    </div>
 		  </article>
 
 		  <article class="product">
-		    <div class="product-info">
-          <h3><span class="product-type">Набор для бритья</span>"BAXTER OF CALIFORNIA"
-          <a href="#">
-			      <img src="baxter-2.jpg">
-          </a>
-			    </h3>
+        <a class="product-img" href="#">
+          <img src="#">
+        </a>
+        <div class="product-info">
+          <h2 class="product-title">
+            <span class="product-type">Набор для бритья</span>"BAXTER OF CALIFORNIA"
+			    </h2>
 		    </div>
 		    <div class="product-order">
 		      <span class="product-price">3 900 РУБ.</span>
-			    <a class="btn" href="#">Купить</a>
+			    <a class="btn product-btn" href="#">Купить</a>
 		    </div>
 		  </article>
 
       <ul class="pagination">
-        <li class="pagination-link">
-          <a href="#">1</a>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">1</a>
         </li>
-        <li class="pagination-link">
-          <a class="active" href="#">2</a>
+        <li class="pagination-item-active">
+          <a class="pagination-link">2</a>
         </li>
-        <li class="pagination-link">
-          <a href="#">3</a>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
         </li>
-        <li class="pagination-link">
-          <a href="#">Следующая</a>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">Следующая</a>
         </li>
       </ul>
 	  </section>
@@ -217,7 +234,7 @@
         <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
         <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
       </section>
-      
+
       <section class="footer-copyright">
         <p>Разработано:</p>
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>

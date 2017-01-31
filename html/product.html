@@ -13,20 +13,20 @@
 	    </div>
 	    <nav class="main-nav">
         <ul class="main-nav-list">
-		      <li class="main-nav-link">
-			      <a href="#">Информация</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Информация</a>
 			    </li>
-		      <li class="main-nav-link">
-			      <a href="#">Новости</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Новости</a>
 			    </li>
-		      <li class="main-nav-link">
-			      <a href="#">Прайс-лист</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Прайс-лист</a>
 			    </li>
-		      <li class="main-nav-link-active">
-			      <a href="#">Магазин</a>
+		      <li class="main-nav-item-active">
+			      <a class="main-nav-link" href="#">Магазин</a>
 			    </li>
-		      <li class="main-nav-link">
-			      <a href="#">Контакты</a>
+		      <li class="main-nav-item">
+			      <a class="main-nav-link" href="#">Контакты</a>
 			    </li>
 		    </ul>
 	    </nav>
@@ -38,45 +38,49 @@
 
   <main class="container"><!--оцентровка основного содержания-->
 	<!--блок с названием товара и второстепенной навигацией-->
-    <div class="product-title">
-      <h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
-      <nav class="breadcrumbs">
-        <ul>
-          <li>
-            <a href="#">Главная</a>
+    <div class="products">
+      <h1 class="product-title">Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
+      <nav class="sub-nav">
+        <ul class="breadcrumbs">
+          <li class="breadcrums-item">
+            <a class="breadcrums-link" href="#">Главная</a>
           </li>
-          <li>
-            <a href="#">Магазин</a>
+          <li class="breadcrums-item">
+            <a class="breadcrums-link" href="#">Магазин</a>
           </li>
-          <li>
-            <a href="catalog.html">Средства для ухода</a>
+          <li class="breadcrums-item">
+            <a class="breadcrums-link" href="catalog.html">Средства для ухода</a>
           </li>
-          <li class="active">
-            <a>Набор для путешествий "BAXTER OF CALIFORNIA"</a>
+          <li class="breadcrumbs-item-active">
+            <a class="breadcrums-link">Набор для путешествий "BAXTER OF CALIFORNIA"</a>
           </li>
         </ul>
       </nav>
     </div>
 
-    <div class="product-images">
-      <div class="product-large-image">
-        <img src="image1.jpg" alt="Travel kit" height="#" width="#">
+    <section class="photos">
+      <div class="photos-big">
+        <div class="photo-item">
+          <img src="#" alt="Travel kit" height="#" width="#">
+        </div>
       </div>
-      <div class="product-small-image">
-        <img src="image2.jpg" alt="Travel kit" height="#" width="#">
+      <div class="photos-small">
+        <div class="photo-item">
+          <img src="#" alt="Travel kit" height="#" width="#">
+        </div>
+        <div class="photo-item">
+          <img src="#" alt="Travel kit" height="#" width="#">
+        </div>
+        <div class="photo-item">
+          <img src="#" alt="Travel kit" height="#" width="#">
+        </div>
       </div>
-      <div class="product-small-image">
-        <img src="image3.jpg" alt="Travel kit" height="#" width="#">
-      </div>
-      <div class="product-small-image">
-        <img src="image4.jpg" alt="Travel kit" height="#" width="#">
-      </div>
-    </div>
+    </section>
 
     <div class="product-description">
-      <p>Есть в наличии</p>
-      <p>Артикул:DEXTER-AE</p>
-      <p>Travel kit - необходимый аксессуар во время любого
+      <p class="product-text">Есть в наличии</p>
+      <p class="product-text-active">Артикул:DEXTER-AE</p>
+      <p class="product-text">Travel kit - необходимый аксессуар во время любого
       путешествия. В аккуратной кожаной сумке находится все, что
       нужно для бриться и ухода за кожей во время рабочей поездки
       или отдыха: средство для умывания, увлажняющий ркем, крем
@@ -90,12 +94,12 @@
 
     <div class="product-info">
       <b>В набор входят:</b>
-        <ul>
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
+        <ul class="product-info-list">
+          <li class="product-info-item">Средство для умывания (50 мл)</li>
+          <li class="product-info-item">Увлажняющий крем (50 мл)</li>
+          <li class="product-info-item">Крем для бритья (50 мл)</li>
+          <li class="product-info-item">Крем после бритья, шампунь (50 мл)</li>
+          <li class="product-info-item">Удобная кожаная косметичка</li>
         </ul>
     </div>
   </main>
@@ -115,7 +119,7 @@
         <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
         <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
       </section>
-      
+
       <section class="footer-copyright">
         <p>Разработано:</p>
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
